@@ -18,7 +18,7 @@ agent any
             }
         }
      }
-     stage('Build Docker Image and Push'){
+     stage('Build Docker Image and Push to'){
         steps{
             script {
                   docker.withRegistry('',registryCredential) {
