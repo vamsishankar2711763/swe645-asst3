@@ -32,7 +32,7 @@ agent any
      }
       stage('Deploying to single node in Rancher'){
         steps{
-            script {
+            script { 
                   sh 'kubectl set image deployment/deploy-1 container-0=vsimhadr/studentsurvey645:'+dateTag
             }
         }
