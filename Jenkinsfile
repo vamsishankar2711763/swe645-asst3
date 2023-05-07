@@ -33,7 +33,7 @@ agent any
       stage('Deploying to single node in Rancher'){
         steps{
             script {
-                  sh 'kubectl set image deployment/deploy1 container-0=vsimhadr/studentsurvey645:'+dateTag
+                  sh 'kubectl set image deployment/deploy-1 container-0=vsimhadr/studentsurvey645:'+dateTag
             }
         }
      }
